@@ -4,7 +4,11 @@
 echo "Install new vim files..."
 
 # copy new files
-cp -r ./vimfile ~/.vim
+flg=$(ls -l ~/.vim/ | wc -l)
+if [[ flg -le 2 ]]; then
+	cp -r ./vimfile ~/.vim
+fi
+
 cp ./vimrc ~/.vimrc
 
 ### finish install

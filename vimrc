@@ -23,11 +23,10 @@ Plugin 'honza/vim-snippets'      " snippets files for various programming langua
 Plugin 'vim-scripts/OmniCppComplete'  "omni-completion with ctags database
 "Plugin 'justmao945/vim-clang'
 "Plugin 'Shougo/neocomplete.vim'
-
 Plugin 'vim-scripts/AutoComplPop'     "automatically opens popup menu for completions
+Plugin 'iamcopper/auto-pairs'    " insert or delete brackets, parens, quotes in pair
 
 Plugin 'vim-scripts/a.vim'       " Alternate between *.c and *.h
-
 Plugin 'vim-utils/vim-man'       " man in vim
 
 Plugin 'vim-airline/vim-airline' " vim status bar
@@ -105,6 +104,8 @@ set	wildmode=list:longest,full   " command completion mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcut Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set mapleader
+let mapleader=","
 " Space to command mode.
 nnoremap <space> :
 vnoremap <space> :
