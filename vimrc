@@ -15,14 +15,25 @@ Plugin 'vim-scripts/taglist.vim' " taglist browser
 Plugin 'yegappan/mru'            " most recently used
 Plugin 'scrooloose/nerdtree'     " file explorer
 Plugin 'scrooloose/nerdcommenter'
+
 Plugin 'SirVer/ultisnips'        " snippets engine
 Plugin 'honza/vim-snippets'      " snippets files for various programming languages
+"Plugin 'vim-scripts/snipMate'
+
 Plugin 'vim-scripts/OmniCppComplete'  "omni-completion with ctags database
+"Plugin 'justmao945/vim-clang'
+"Plugin 'Shougo/neocomplete.vim'
+
 Plugin 'vim-scripts/AutoComplPop'     "automatically opens popup menu for completions
+
 Plugin 'vim-scripts/a.vim'       " Alternate between *.c and *.h
+
 Plugin 'vim-utils/vim-man'       " man in vim
 
-call vundle#end()                " required
+Plugin 'vim-airline/vim-airline' " vim status bar
+Plugin 'vim-airline/vim-airline-themes'
+
+call vundle#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -141,6 +152,8 @@ let g:NERDTreeQuitOnOpen=1
 let g:OmniCpp_DefaultNamespaces=["std"]
 let g:OmniCpp_MayCompleteScope=1
 let g:OmniCpp_SelectFirstItem=2
+" vim-airline (only for xterm)
+set term=xterm-256color
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Commands
