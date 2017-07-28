@@ -35,6 +35,29 @@ call vundle#end()
 "filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" taglist.vim
+let g:Tlist_Auto_Update=1
+let g:Tlist_Process_File_Always=1
+let g:Tlist_Exit_OnlyWindow=1
+let g:Tlist_Show_One_File=1
+let g:Tlist_WinWidth=25
+let g:Tlist_Enable_Fold_Column=0
+let g:Tlist_Auto_Highlight_Tag=1
+" NERDTree.vim
+let g:NERDTreeWinPos="right"
+let g:NERDTreeWinSize=25
+let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeQuitOnOpen=1
+" OmniCppComplete.vim
+let g:OmniCpp_DefaultNamespaces=["std"]
+let g:OmniCpp_MayCompleteScope=1
+let g:OmniCpp_SelectFirstItem=2
+" vim-airline (only for xterm)
+set term=xterm-256color
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set	nocompatible                 " out of VI compatible mode.
@@ -135,29 +158,6 @@ function! RunShell(Msg, Shell)
 	call system(a:Shell)
 	echon 'done'
 endfunction
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plugin Settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" taglist.vim
-let g:Tlist_Auto_Update=1
-let g:Tlist_Process_File_Always=1
-let g:Tlist_Exit_OnlyWindow=1
-let g:Tlist_Show_One_File=1
-let g:Tlist_WinWidth=25
-let g:Tlist_Enable_Fold_Column=0
-let g:Tlist_Auto_Highlight_Tag=1
-" NERDTree.vim
-let g:NERDTreeWinPos="right"
-let g:NERDTreeWinSize=25
-let g:NERDTreeShowLineNumbers=1
-let g:NERDTreeQuitOnOpen=1
-" OmniCppComplete.vim
-let g:OmniCpp_DefaultNamespaces=["std"]
-let g:OmniCpp_MayCompleteScope=1
-let g:OmniCpp_SelectFirstItem=2
-" vim-airline (only for xterm)
-set term=xterm-256color
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Commands
