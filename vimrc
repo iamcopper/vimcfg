@@ -27,12 +27,12 @@ Plugin 'vim-scripts/AutoComplPop'     "automatically opens popup menu for comple
 Plugin 'iamcopper/auto-pairs'    " insert or delete brackets, parens, quotes in pair
 
 Plugin 'vim-scripts/a.vim'       " Alternate between *.c and *.h
-Plugin 'vim-utils/vim-man'       " man in vim
 
 Plugin 'vim-airline/vim-airline' " vim status bar
 Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
+"filetype plugin indent on
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
@@ -78,7 +78,7 @@ set	listchars=tab:-\ ,trail:.    " <tab> show as '- ', <space> show as '.'
 " wrap
 set	textwidth=0                  " do not wrap words (insert)
 set	nowrap                       " do not wrap words (view)
-set	whichwrap=h,l                " allow specified keys that can move across line
+"set	whichwrap=h,l                " allow specified keys that can move across line
 
 " file encoding and format
 set	encoding=utf-8
@@ -106,9 +106,11 @@ set	wildmode=list:longest,full   " command completion mode
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set mapleader
 let mapleader=","
+
 " Space to command mode.
 nnoremap <space> :
 vnoremap <space> :
+
 " Switching between buffers.
 nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
@@ -118,6 +120,7 @@ inoremap <C-h> <Esc><C-W>h
 inoremap <C-j> <Esc><C-W>j
 inoremap <C-k> <Esc><C-W>k
 inoremap <C-l> <Esc><C-W>l
+
 " "cd" to change to open directory.
 let OpenDir=system("pwd")
 nmap <silent> <leader>cd :exe 'cd ' . OpenDir<cr>:pwd<cr>
