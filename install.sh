@@ -4,8 +4,8 @@
 echo "Install new vim files..."
 
 # copy new files
-flg=$(ls -l ~/.vim/ | wc -l)
-if [[ flg -le 2 ]]; then
+flg=$(ls -l ~/.vim/bundle | wc -l)
+if [[ $flg -le 2 ]]; then
 	cp -r ./vimfile ~/.vim
 fi
 
