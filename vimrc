@@ -74,9 +74,9 @@ set	list                         " show <tab>
 set	listchars=tab:-\ ,trail:.    " <tab> show as '- ', <space> show as '.'
 
 " wrap
-set	textwidth=0                  " do not wrap words (insert)
+set	textwidth=100                " do not wrap words (insert)
 set	nowrap                       " do not wrap words (view)
-"set	whichwrap=h,l                " allow specified keys that can move across line
+"set	whichwrap=h,l            " allow specified keys that can move across line
 
 " file encoding and format
 set	encoding=utf-8
