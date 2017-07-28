@@ -40,7 +40,7 @@ set	nobackup                     " do not create backup file
 set	autoread                     " auto read file that has been changed on disk
 set	autowrite                    " auto save before commands like :next and :make
 set	backspace=indent,eol,start   " backspace can delete everything
-set	history=100                  " number of recorded history command
+set	history=50                   " number of recorded history command
 set	helpheight=10                " minimal initial height of the help window
 set	hidden                       " enable multiple modified buffers
 set	mouse=a                      " allow using mouse in all mode
