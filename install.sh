@@ -4,13 +4,18 @@
 echo "Install new vim files..."
 
 # copy new files
-flg=$(ls -l ~/.vim/bundle | wc -l)
-if [[ $flg -le 2 ]]; then
+if [[ -d ~/.vim/bundle ]]; then
+	plug_num=$(ls -l ~/.vim/bundle | wc -l)
+else
+	rm -rf ~/.vim
+	plug_num=0
+fi
+if [[ $plug_num -le 2 ]]; then
 	cp -r ./vimfile ~/.vim
 fi
 
 cp ./vimrc ~/.vimrc
 
 ### finish install
-echo "Install finished!"
+echo "Done!"
 exit 0
