@@ -9,26 +9,23 @@ filetype off                     " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'    " plugin manager
-
-Plugin 'vim-scripts/taglist.vim' " taglist browser
-Plugin 'yegappan/mru'            " most recently used
-Plugin 'scrooloose/nerdtree'     " file explorer
-Plugin 'scrooloose/nerdcommenter'
-
-Plugin 'SirVer/ultisnips'        " snippets engine
-Plugin 'honza/vim-snippets'      " snippets files for various programming languages
+Plugin 'VundleVim/Vundle.vim'           " plugin manager
+" Explorer & Alternate property
+Plugin 'vim-scripts/taglist.vim'        " taglist browser
+Plugin 'yegappan/mru'                   " most recently used
+Plugin 'scrooloose/nerdtree'            " file explorer
+Plugin 'vim-scripts/a.vim'              " Alternate between *.c and *.h
+" Snippets & Code Complete
+Plugin 'SirVer/ultisnips'               " snippets engine
+Plugin 'honza/vim-snippets'             " snippets files for various programming languages
 "Plugin 'vim-scripts/snipMate'
-
-Plugin 'vim-scripts/OmniCppComplete'  "omni-completion with ctags database
-"Plugin 'justmao945/vim-clang'
-"Plugin 'Shougo/neocomplete.vim'
-Plugin 'vim-scripts/AutoComplPop'     "automatically opens popup menu for completions
-Plugin 'iamcopper/auto-pairs'    " insert or delete brackets, parens, quotes in pair
-
-Plugin 'vim-scripts/a.vim'       " Alternate between *.c and *.h
-
-Plugin 'vim-airline/vim-airline' " vim status bar
+Plugin 'vim-scripts/OmniCppComplete'    " omni-completion with ctags database
+Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for keywords completions
+"Plugin 'Shougo/neocomplete.vim'        " keywords completions
+Plugin 'iamcopper/auto-pairs'           " insert or delete brackets, parens, quotes in pair
+" Others
+Plugin 'scrooloose/nerdcommenter'       " comment tool
+Plugin 'vim-airline/vim-airline'        " status bar
 Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
