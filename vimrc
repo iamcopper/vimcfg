@@ -25,6 +25,7 @@ Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for key
 Plugin 'iamcopper/auto-pairs'           " insert or delete brackets, parens, quotes in pair
 " Others
 Plugin 'scrooloose/nerdcommenter'       " comment tool
+Plugin 'vim-scripts/DoxygenToolkit.vim' " another comment tool
 Plugin 'vim-airline/vim-airline'        " status bar
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -53,6 +54,11 @@ let g:OmniCpp_MayCompleteScope=1
 let g:OmniCpp_SelectFirstItem=2
 " vim-airline (only for xterm)
 set term=xterm-256color
+" DoxygenToolkit.vim
+let g:DoxygenToolkit_briefTag_pre=""
+let g:DoxygenToolkit_paramTag_pre="\\param "
+let g:DoxygenToolkit_returnTag="\\return "
+let g:DoxygenToolkit_authorName="kang.pan"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
