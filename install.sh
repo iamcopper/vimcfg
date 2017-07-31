@@ -11,6 +11,7 @@ else
 	plug_num=0
 fi
 if [[ $plug_num -le 2 ]]; then
+	git clone git@github.com:VundleVim/Vundle.vim.git ./vimfile/bundle/Vundle.vim
 	cp -r ./vimfile ~/.vim
 fi
 
