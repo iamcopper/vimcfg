@@ -127,6 +127,7 @@ nmap  <F2> :TlistToggle<cr>
 nmap  <F3> :NERDTreeToggle<cr>
 nmap  <F4> :MRU<cr>
 nmap  <F5> :call RunShell("Generate tags", "ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .")<cr>
+nmap  <F6> :call RunShell("Generate tags", "ctags -R * .")<cr>
 
 function! RunShell(Msg, Shell)
 	echo a:Msg . '...'
