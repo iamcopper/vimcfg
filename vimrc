@@ -22,7 +22,6 @@ Plugin 'honza/vim-snippets'             " snippets files for various programming
 Plugin 'vim-scripts/OmniCppComplete'    " omni-completion with ctags database
 Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for keywords completions
 "Plugin 'Shougo/neocomplete.vim'        " keywords completions
-Plugin 'iamcopper/auto-pairs'           " insert or delete brackets, parens, quotes in pair
 " Others
 Plugin 'scrooloose/nerdcommenter'       " comment tool
 Plugin 'vim-scripts/DoxygenToolkit.vim' " another comment tool
