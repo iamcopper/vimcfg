@@ -10,11 +10,13 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'           " plugin manager
+
 " Explorer & Alternate property
 Plugin 'vim-scripts/taglist.vim'        " taglist browser
 Plugin 'yegappan/mru'                   " most recently used
 Plugin 'scrooloose/nerdtree'            " file explorer
 Plugin 'vim-scripts/a.vim'              " Alternate between *.c and *.h
+
 " Snippets & Code Complete
 Plugin 'SirVer/ultisnips'               " snippets engine
 Plugin 'honza/vim-snippets'             " snippets files for various programming languages
@@ -22,11 +24,19 @@ Plugin 'honza/vim-snippets'             " snippets files for various programming
 Plugin 'vim-scripts/OmniCppComplete'    " omni-completion with ctags database
 Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for keywords completions
 "Plugin 'Shougo/neocomplete.vim'        " keywords completions
+
+" Language Support
+Plugin 'pangloss/vim-javascript'        " javascript syntax support
+Plugin 'leafgarland/typescript-vim'     " typescript syntax support
+
+" Code Style
+Plugin 'editorconfig/editorconfig-vim'  " define and maintain consistend coding style
+
 " Others
 Plugin 'scrooloose/nerdcommenter'       " comment tool
 Plugin 'vim-scripts/DoxygenToolkit.vim' " another comment tool
 Plugin 'vim-airline/vim-airline'        " status bar
-Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline-themes' " status bar theme
 
 call vundle#end()
 "filetype plugin indent on
