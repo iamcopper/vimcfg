@@ -28,6 +28,8 @@ Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for key
 " Language Support
 Plugin 'pangloss/vim-javascript'        " javascript syntax support
 Plugin 'leafgarland/typescript-vim'     " typescript syntax support
+Plugin 'godlygeek/tabular'              " vim-markdown plugin needed this
+Plugin 'plasticboy/vim-markdown'        " markdown syntax support
 
 " Code Style
 Plugin 'editorconfig/editorconfig-vim'  " define and maintain consistend coding style
@@ -172,6 +174,8 @@ let g:DoxygenToolkit_briefTag_pre=""
 let g:DoxygenToolkit_paramTag_pre="\\param   "
 let g:DoxygenToolkit_returnTag   ="\\return  "
 let g:DoxygenToolkit_authorName="kang.pan"
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Commands
