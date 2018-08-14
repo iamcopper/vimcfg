@@ -12,7 +12,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'           " plugin manager
 
 " Explorer & Alternate property
-Plugin 'aceofall/gtags.vim'
 Plugin 'vim-scripts/taglist.vim'        " taglist browser
 Plugin 'yegappan/mru'                   " most recently used
 Plugin 'scrooloose/nerdtree'            " file explorer
@@ -111,10 +110,6 @@ set	incsearch                    " incremental search
 set	wildmenu                     " enhanced command completion
 set	wildmode=list:longest,full   " command completion mode
 
-" cscope (gtags related settings)
-set cscopetag                    " set cscope as tags command
-set cscopeprg='gtags-cscope'     " set gtags-cscope to replace cscope
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Shortcut Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -142,7 +137,8 @@ nmap <silent> <leader>cd :exe 'cd ' . OpenDir<cr>:pwd<cr>
 nmap  <F2> :TlistToggle<cr>
 nmap  <F3> :NERDTreeToggle<cr>
 nmap  <F4> :MRU<cr>
-nmap  <F6> :call RunShell("Generate tags", "gtags")<cr>
+nmap  <F5> :call RunShell("Generate tags", "ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .")<cr>
+nmap  <F6> :call RunShell("Generate tags", "ctags -R * .")<cr>
 
 function! RunShell(Msg, Shell)
 	echo a:Msg . '...'
@@ -153,10 +149,6 @@ endfunction
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" gtags
-let GtagsCscope_Auto_Load = 1
-let CtagsCscope_AUTO_Map = 1
-let GtagsCscope_Quiet = 1
 " taglist.vim
 let g:Tlist_Auto_Update=1
 let g:Tlist_Process_File_Always=1
