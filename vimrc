@@ -111,21 +111,17 @@ set	wildmode=list:longest,full   " command completion mode
 " Set mapleader
 let mapleader=","
 
-" Space to command mode.
+" Space to command mode
 nnoremap <space> :
 vnoremap <space> :
 
-" Switching between buffers.
+" Switching between vim multi screens
 nnoremap <C-h> <C-W>h
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
-inoremap <C-h> <Esc><C-W>h
-inoremap <C-j> <Esc><C-W>j
-inoremap <C-k> <Esc><C-W>k
-inoremap <C-l> <Esc><C-W>l
 
-" "cd" to change to open directory.
+" "cd" to change to open directory
 let OpenDir=system("pwd")
 nmap <silent> <leader>cd :exe 'cd ' . OpenDir<cr>:pwd<cr>
 
