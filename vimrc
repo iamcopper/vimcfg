@@ -21,6 +21,9 @@ Plugin 'vim-scripts/a.vim'              " Alternate between *.c and *.h
 Plugin 'SirVer/ultisnips'               " snippets engine, witten in Python
 "Plugin 'vim-scripts/snipMate'          " snippets engine, same as ultisnips, but written in VimL
 Plugin 'honza/vim-snippets'             " snippets files for various programming languages
+Plugin 'Shougo/deoplete.nvim'           " code complete: deoplete
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
 
 " Language Support
 Plugin 'godlygeek/tabular'              " vim-markdown plugin needed this
@@ -156,6 +159,8 @@ let g:NERDTreeQuitOnOpen=1
 " vim-airline (only for xterm)
 set term=xterm-256color
 let g:airline_theme='badwolf'
+" deoplete.nvim
+let g:deoplete#enable_at_startup = 1
 " DoxygenToolkit.vim
 let g:DoxygenToolkit_briefTag_pre=""
 let g:DoxygenToolkit_paramTag_pre="\\param   "
