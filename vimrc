@@ -23,8 +23,6 @@ Plugin 'SirVer/ultisnips'               " snippets engine, witten in Python
 Plugin 'honza/vim-snippets'             " snippets files for various programming languages
 
 " Language Support
-Plugin 'pangloss/vim-javascript'        " javascript syntax support
-Plugin 'leafgarland/typescript-vim'     " typescript syntax support
 Plugin 'godlygeek/tabular'              " vim-markdown plugin needed this
 Plugin 'plasticboy/vim-markdown'        " markdown syntax support
 
