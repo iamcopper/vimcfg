@@ -13,14 +13,14 @@ Plugin 'VundleVim/Vundle.vim'           " plugin manager
 
 " Explorer & Alternate property
 Plugin 'vim-scripts/taglist.vim'        " taglist browser
-Plugin 'yegappan/mru'                   " most recently used
 Plugin 'scrooloose/nerdtree'            " file explorer
+Plugin 'yegappan/mru'                   " most recently used
 Plugin 'vim-scripts/a.vim'              " Alternate between *.c and *.h
 
 " Snippets & Code Complete
-Plugin 'SirVer/ultisnips'               " snippets engine
+Plugin 'SirVer/ultisnips'               " snippets engine, witten in Python
+"Plugin 'vim-scripts/snipMate'          " snippets engine, same as ultisnips, but written in VimL
 Plugin 'honza/vim-snippets'             " snippets files for various programming languages
-"Plugin 'vim-scripts/snipMate'
 Plugin 'vim-scripts/OmniCppComplete'    " omni-completion with ctags database
 Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for keywords completions
 "Plugin 'Shougo/neocomplete.vim'        " keywords completions
