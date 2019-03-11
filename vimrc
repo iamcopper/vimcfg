@@ -21,9 +21,6 @@ Plugin 'vim-scripts/a.vim'              " Alternate between *.c and *.h
 Plugin 'SirVer/ultisnips'               " snippets engine, witten in Python
 "Plugin 'vim-scripts/snipMate'          " snippets engine, same as ultisnips, but written in VimL
 Plugin 'honza/vim-snippets'             " snippets files for various programming languages
-Plugin 'vim-scripts/OmniCppComplete'    " omni-completion with ctags database
-Plugin 'vim-scripts/AutoComplPop'       " automatically opens popup menu for keywords completions
-"Plugin 'Shougo/neocomplete.vim'        " keywords completions
 
 " Language Support
 Plugin 'pangloss/vim-javascript'        " javascript syntax support
@@ -162,10 +159,6 @@ let g:NERDTreeWinPos="right"
 let g:NERDTreeWinSize=25
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeQuitOnOpen=1
-" OmniCppComplete.vim
-let g:OmniCpp_DefaultNamespaces=["std"]
-let g:OmniCpp_MayCompleteScope=1
-let g:OmniCpp_SelectFirstItem=2
 " vim-airline (only for xterm)
 set term=xterm-256color
 let g:airline_theme='badwolf'
