@@ -26,7 +26,7 @@ Plugin 'roxma/nvim-yarp'                " needed by deoplete
 Plugin 'roxma/vim-hug-neovim-rpc'       " needed by deoplete
 Plugin 'deoplete-plugins/deoplete-go'   " golang code complete support, co-operate with deoplete
 Plugin 'fatih/vim-go'                   " needed by gocode
-Plugin 'stamblerre/gocode', {'rtp', 'vim/'}   " golang autocompletetion datemon
+Plugin 'stamblerre/gocode', {'rtp': 'vim/'}   " golang autocompletetion datemon
 
 
 " Language Support
