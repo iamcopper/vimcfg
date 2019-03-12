@@ -22,8 +22,12 @@ Plugin 'SirVer/ultisnips'               " snippets engine, witten in Python
 "Plugin 'vim-scripts/snipMate'          " snippets engine, same as ultisnips, but written in VimL
 Plugin 'honza/vim-snippets'             " snippets files for various programming languages
 Plugin 'Shougo/deoplete.nvim'           " code complete: deoplete
-Plugin 'roxma/nvim-yarp'
-Plugin 'roxma/vim-hug-neovim-rpc'
+Plugin 'roxma/nvim-yarp'                " needed by deoplete
+Plugin 'roxma/vim-hug-neovim-rpc'       " needed by deoplete
+Plugin 'deoplete-plugins/deoplete-go'   " golang code complete support, co-operate with deoplete
+Plugin 'fatih/vim-go'                   " needed by gocode
+Plugin 'stamblerre/gocode', {'rtp', 'vim/'}   " golang autocompletetion datemon
+
 
 " Language Support
 Plugin 'godlygeek/tabular'              " vim-markdown plugin needed this
