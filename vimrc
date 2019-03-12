@@ -27,7 +27,7 @@ Plugin 'roxma/vim-hug-neovim-rpc'       " needed by deoplete
 Plugin 'deoplete-plugins/deoplete-go'   " golang code complete support, co-operate with deoplete
 Plugin 'fatih/vim-go'                   " needed by gocode
 Plugin 'stamblerre/gocode', {'rtp': 'vim/'}   " golang autocompletetion datemon
-
+Plugin 'zchee/deoplete-clang'           " c code complete support, co-operate with deoplete
 
 " Language Support
 Plugin 'godlygeek/tabular'              " vim-markdown plugin needed this
@@ -164,6 +164,9 @@ set term=xterm-256color
 let g:airline_theme='badwolf'
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
+" deoplete-clang
+let g:deoplete#sources#clang#libclang_path = "/usr/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header = "/usr/lib/clang/7.0.1/include"
 " DoxygenToolkit.vim
 let g:DoxygenToolkit_briefTag_pre=""
 let g:DoxygenToolkit_paramTag_pre="\\param   "
