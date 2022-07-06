@@ -1,5 +1,9 @@
 #!/bin/bash
 
+### install dependency package
+sudo apt install -y python3-pip
+pip3 install pynvim neovim
+
 ### install new files
 echo "Install new vim files..."
 
