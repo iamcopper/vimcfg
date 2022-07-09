@@ -1,26 +1,25 @@
 #!/bin/bash
 
-### install dependency package
-sudo apt install -y python3-pip
-pip3 install pynvim neovim
+echo ">>> Install vim and config dependency packages:"
+sudo apt install -y cmake \
+	python3-pip
+pip3 install pynvim \
+	neovim
 
-### install new files
-echo "Install new vim files..."
-
-# copy new files
-if [[ -d ~/.vim/bundle ]]; then
-	plug_num=$(ls -l ~/.vim/bundle | wc -l)
-else
-	rm -rf ~/.vim
-	plug_num=0
+echo -e "\n>>> Install vim config and color files:"
+if [[ ! -f ~/.vimrc ]]; then
+	cp ./vimrc ~/.vimrc
 fi
-if [[ $plug_num -le 2 ]]; then
-	git clone https://github.com/VundleVim/Vundle.vim.git ./vimfile/bundle/Vundle.vim
+if [[ ! -d ~/.vim ]]; then
 	cp -r ./vimfile ~/.vim
 fi
 
-cp ./vimrc ~/.vimrc
+echo -e "\n>>> Install vim plugin manager: Vundle.vimfiles:"
+if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi
 
-### finish install
-echo "Done!"
-exit 0
+echo -e "\n>>> Install vim plugins defined in vimrc"
+vim -c PluginInstall -c qa
+
+echo -e "\n>>> Done!"
