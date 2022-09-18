@@ -84,7 +84,7 @@ set	showcmd                      " show (partial) command in status line
 set	scrolloff=5                  " minimal number of screen lines to keep beyond the cursor
 set	list                         " show <tab>
 "set	listchars=tab:-\ ,trail:.    " <tab> show as '-   ', <trail> show as '.'
-set	listchars=tab:>-,trail:~     " <tab> show as '>---', <trail> show as '~'
+set	listchars=tab:>\ ,trail:~     " <tab> show as '>---', <trail> show as '~'
 
 " wrap
 set	textwidth=100                " do not wrap words (insert)
