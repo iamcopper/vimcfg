@@ -1,7 +1,16 @@
 #!/bin/bash
 
+if [[ $(id -u) -eq 0 ]]; then
+    echo -e "\n[ERROR] Can not run as root\n"
+    exit 1
+fi
+
 echo ">>> Install vim and config dependency packages:"
-sudo apt install -y cmake \
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt install -y vim \
+	exuberant-ctags \
+	cmake \
+	git \
 	python3-pip
 pip3 install pynvim \
 	neovim
