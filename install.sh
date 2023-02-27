@@ -25,7 +25,7 @@ fi
 
 echo -e "\n>>> Install vim plugin manager: Vundle.vimfiles:"
 if [[ ! -d ~/.vim/bundle/Vundle.vim ]]; then
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	git clone https://github.com/iamcopper/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
 echo -e "\n>>> Install vim plugins defined in vimrc"
