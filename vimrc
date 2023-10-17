@@ -9,7 +9,8 @@ filetype off                     " required
 set rtp+=${HOME}/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'iamcopper/Vundle.vim'           " plugin manager
+Plugin 'VundleVim/Vundle.vim'           " plugin manager
+" Plugin 'iamcopper/Vundle.vim'         " plugin manager
 
 " Explorer & Alternate property
 Plugin 'vim-scripts/taglist.vim'        " taglist browser
