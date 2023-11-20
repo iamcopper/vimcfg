@@ -56,7 +56,8 @@ set	backspace=indent,eol,start   " backspace can delete everything
 set	history=50                   " number of recorded history command
 set	helpheight=10                " minimal initial height of the help window
 set	hidden                       " enable multiple modified buffers
-set	mouse=v                      " allow using mouse and copy in all mode
+set	mouse=a                      " allow using mouse in all mode
+"set	mouse=v                      " allow using mouse select and copy in all mode
 set	wildignore=.svn,.git,*.swp,*.bak,*.o,*.e,*~
 
 filetype plugin indent on        " enable auto detect file type and automatically indent by filetype
