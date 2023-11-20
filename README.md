@@ -10,7 +10,8 @@ Personal vim config files.
 F2 ------ Tag List (Variable/Function/Macro...)
 F3 ------ File Explorer
 F4 ------ MRU: Most Recent Used File List
-F5/F6 --- Gererate tags in current dir
+F5 ------ Toggle mouse behavior
+F6 ------ Gererate tags in current dir
 ```
 
 ## Install
