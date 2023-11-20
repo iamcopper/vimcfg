@@ -137,14 +137,25 @@ nmap <silent> <leader>cd :exe 'cd ' . OpenDir<cr>:pwd<cr>
 nmap <F2> :TlistToggle<cr>
 nmap <F3> :NERDTreeToggle<cr>
 nmap <F4> :MRU<cr>
-nmap <F5> :call RunShell("Generate tags", "ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .")<cr>
+nmap <F5> :call ToggleMouse()<cr>
 nmap <F6> :call RunShell("Generate tags", "ctags -R * .")<cr>
+"nmap <F6> :call RunShell("Generate tags", "ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .")<cr>
 
 function! RunShell(Msg, Shell)
 	echo a:Msg . '...'
 	call system(a:Shell)
 	echon 'done'
 endfunction
+
+function! ToggleMouse()
+	if &mouse == 'a'
+		echo "set mouse=v: enable mouse select and copy text"
+		set mouse=v
+	else
+		echo "set mouse=a: enable mouse move window"
+		set mouse=a
+	endif
+endfunc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugin Settings
