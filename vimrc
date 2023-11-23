@@ -151,9 +151,11 @@ function! ToggleMouse()
 	if &mouse == 'a'
 		echo "set mouse=v: enable mouse select and copy text"
 		set mouse=v
+		set nonumber
 	else
 		echo "set mouse=a: enable mouse move window"
 		set mouse=a
+		set number
 	endif
 endfunc
 
