@@ -6,13 +6,16 @@ if [[ $(id -u) -eq 0 ]]; then
 fi
 
 echo ">>> Install vim and config dependency packages:"
-sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
 sudo apt install -y vim \
 	exuberant-ctags \
 	cmake \
 	git \
+	python3 \
+	python-is-python3 \
 	python3-pip
-pip3 install pynvim \
+pip3 install --break-system-packages \
+	pynvim \
 	neovim
 
 echo -e "\n>>> Install vim config and color files:"
