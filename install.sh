@@ -6,7 +6,11 @@ if [[ $(id -u) -eq 0 ]]; then
 fi
 
 echo ">>> Install vim and config dependency packages:"
-sudo add-apt-repository ppa:jonathonf/vim
+ubuntu_ver_major=$(lsb_release -rs 2>/dev/null | awk -F . '{print $1}')
+echo "ubuntu_ver_major=${ubuntu_ver_major}"
+if [[ ${ubuntu_ver_major} -le 22 ]]; then
+	sudo add-apt-repository ppa:jonathonf/vim
+fi
 sudo apt update
 sudo apt install -y vim \
 	neovim \
