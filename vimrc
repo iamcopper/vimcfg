@@ -190,6 +190,8 @@ let g:DoxygenToolkit_returnTag   ="\\return  "
 let g:DoxygenToolkit_authorName="kang.pan"
 " vim-markdown
 let g:vim_markdown_folding_disabled = 1
+" vim-go
+"let g:go_version_warning = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Auto Commands
