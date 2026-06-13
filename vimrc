@@ -1,5 +1,13 @@
 " .vimrc - Vim configuration file.
 
+if has('nvim')
+    let g:is_nvim = 1
+    let g:is_vim = 0
+else
+    let g:is_vim = 1
+    let g:is_nvim = 0
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vundle
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -44,6 +52,8 @@ call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:python3_host_prog='/usr/bin/python3'
+
 set nocompatible                 " out of VI compatible mode.
 set nobackup                     " do not create backup file
 set autoread                     " auto read file that has been changed on disk
@@ -172,7 +182,9 @@ let g:NERDTreeWinSize=25
 let g:NERDTreeShowLineNumbers=1
 let g:NERDTreeQuitOnOpen=1
 " vim-airline (only for xterm)
-set term=xterm-256color
+if !has('nvim')
+	set term=xterm-256color
+endif
 let g:airline_theme='badwolf'
 " deoplete.nvim
 let g:deoplete#enable_at_startup = 1
